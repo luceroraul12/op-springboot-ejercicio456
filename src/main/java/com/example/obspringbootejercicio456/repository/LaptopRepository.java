@@ -1,4 +1,12 @@
 package com.example.obspringbootejercicio456.repository;
 
-public interface LaptopRepository {
+import com.example.obspringbootejercicio456.entities.Laptop;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+
+@Repository
+public interface LaptopRepository extends JpaRepository<Laptop, Long> {
+
+
 }
